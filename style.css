@@ -5,7 +5,6 @@
 }
 
 body {
-    background-color: #e9e7e4;
      font-family: 'DM Sans', sans-serif;
 }
 
@@ -54,6 +53,7 @@ body {
     width: 200px;
     height: 100px;
     object-fit: contain;
+    object-position: left center;
 }
 
 .nav-links {
@@ -168,7 +168,7 @@ body {
 @media (max-width: 768px) {
 
     body {
-        padding: 10px;
+        padding: 0;
     }
 
     .hero {
