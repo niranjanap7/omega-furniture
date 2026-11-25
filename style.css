@@ -209,3 +209,169 @@ body {
         padding: 11px 16px;
     }
 }
+
+
+/* About Section */
+.about-us {
+    padding: 50px 4%;
+    background-color: #e9e7e4;
+}
+
+.about-wrap {
+    max-width: 1500px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 2.3fr;
+    gap: 14px;
+}
+
+/* Brown box */
+.about-stats {
+    background: linear-gradient(160deg, #c9ab80 0%, #9a7a50 60%, #7d6038 100%);
+    color: #fff;
+    border-radius: 18px;
+    height: 150px;          
+    padding: 14px 18px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    min-height: 240px;
+}
+
+.stats-label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.85;
+    position: relative;
+    z-index: 1;
+}
+
+/* Decorative circle, top right */
+.stats-circle {
+    position: absolute;
+    top: 14px;
+    right: -20px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 0.25);
+}
+
+.stats-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    position: relative;
+    z-index: 1;
+}
+
+.stat strong {
+    display: block;
+    font-family: "Italiana", "Cinzel", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+.stat small {
+    font-size: 11px;
+    opacity: 0.85;
+}
+
+/* Right card */
+.about-card {
+    display: grid;
+    grid-template-columns: 1.15fr 1fr;
+    height: 160px;
+
+    background: #f4f0e9;
+    border-radius: 18px;
+    overflow: hidden;
+    min-height: 240px;
+}
+
+.about-text {
+    padding: 28px 28px 28px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text h2 {
+    font-family: "Italiana", "Cinzel", serif;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: #1c1a17;
+    margin-bottom: 14px;
+}
+
+.about-text h2 span {
+    color: #b08d57;
+}
+
+.about-text p {
+    font-size: 12.5px;
+    line-height: 1.7;
+    color: #5a554e;
+    margin-bottom: 10px;
+}
+
+.about-text p:last-child {
+    margin-bottom: 0;
+}
+
+/* Curved image edge */
+.about-image {
+    height: 100%;
+    border-top-left-radius: 110px;
+    border-bottom-left-radius: 110px;
+    overflow: hidden;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .about-us {
+        padding: 50px 5%;
+    }
+
+    .about-wrap {
+        grid-template-columns: 1fr;
+    }
+
+    .about-stats {
+        min-height: 150px;
+    }
+
+    .stats-bottom {
+        flex-direction: row;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .about-card {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        height: 200px;
+        border-radius: 0 0 90px 0;
+    }
+
+    .about-text {
+        padding: 24px 22px;
+    }
+}
