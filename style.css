@@ -150,10 +150,6 @@ body {
     color: #222;
 }
 
-.btn-secondary {
-    border: 1px solid white;
-    color: white;
-}
 
 .btn-primary:hover {
     background: #d6c5ad;
@@ -213,165 +209,119 @@ body {
 
 /* About Section */
 .about-us {
-    padding: 50px 4%;
-    background-color: #e9e7e4;
-}
-
-.about-wrap {
-    max-width: 1500px;
-    margin: 0 auto;
-
-    display: grid;
-    grid-template-columns: 1fr 2.3fr;
-    gap: 14px;
-}
-
-/* Brown box */
-.about-stats {
-    background: linear-gradient(160deg, #c9ab80 0%, #9a7a50 60%, #7d6038 100%);
+    background: #2b2823;
     color: #fff;
-    border-radius: 18px;
-    height: 150px;          
-    padding: 14px 18px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    overflow: hidden;
-    min-height: 240px;
+    margin-top: -40px;              /* tucks under the hero's rounded corners */
+    padding: 116px 5% 80px;         /* 36px extra at the top for the tuck */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.stats-label {
-    font-size: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    opacity: 0.85;
-    position: relative;
-    z-index: 1;
+.about-container {
+    max-width: 1100px;
+    margin: 0 auto;
 }
 
-/* Decorative circle, top right */
-.stats-circle {
-    position: absolute;
-    top: 14px;
-    right: -20px;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: 10px solid rgba(255, 255, 255, 0.25);
-}
-
-.stats-bottom {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    position: relative;
-    z-index: 1;
-}
-
-.stat strong {
-    display: block;
-    font-family: "Italiana", "Cinzel", serif;
-    font-size: 24px;
-    font-weight: 400;
+.about-title {
+    font-size: clamp(38px, 5vw, 56px);
+    font-weight: 700;
+    letter-spacing: 1px;
     line-height: 1.1;
 }
 
-.stat small {
-    font-size: 11px;
-    opacity: 0.85;
+.about-title span {
+    color: #d08a3a;
 }
 
-/* Right card */
-.about-card {
+/* Text + image */
+.about-content {
     display: grid;
-    grid-template-columns: 1.15fr 1fr;
-    height: 160px;
-
-    background: #f4f0e9;
-    border-radius: 18px;
-    overflow: hidden;
-    min-height: 240px;
-}
-
-.about-text {
-    padding: 28px 28px 28px 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.about-text h2 {
-    font-family: "Italiana", "Cinzel", serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 1.1;
-    color: #1c1a17;
-    margin-bottom: 14px;
-}
-
-.about-text h2 span {
-    color: #b08d57;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 20px;
+    align-items: center;
 }
 
 .about-text p {
-    font-size: 12.5px;
-    line-height: 1.7;
-    color: #5a554e;
-    margin-bottom: 10px;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f1ede6;
+    margin-bottom: 18px;
 }
 
 .about-text p:last-child {
     margin-bottom: 0;
 }
 
-/* Curved image edge */
-.about-image {
-    height: 100%;
-    border-top-left-radius: 110px;
-    border-bottom-left-radius: 110px;
-    overflow: hidden;
+.about-image img {
+    display: block;
+    width: 70%;
+    max-width: 420px;
+    margin-left: auto;              /* pushes the image to the right */
+    aspect-ratio: 1.1 / 1;
+    object-fit: cover;
+    border-radius: 14px;
 }
 
-.about-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
+/* Stats */
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 50px;
+    padding-top:20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.stat h3 {
+    font-size: clamp(28px, 4vw, 40px);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.stat p {
+    font-size: 18px;
+    color: #e4e0dc;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
 
-    .about-us {
-        padding: 50px 5%;
+    .hero {
+        border-radius: 0 0 28px 28px;
     }
 
-    .about-wrap {
+    .about-us {
+        margin-top: -28px;
+        padding: 80px 6% 60px;
+    }
+
+    .about-title {
+        margin-bottom: 25px;
+    }
+
+    .about-content {
         grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .about-text p {
+        font-size: 15px;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        margin: 0;
+        aspect-ratio: 4 / 3;
     }
 
     .about-stats {
-        min-height: 150px;
+        margin-top: 45px;
+        padding-top: 30px;
+        gap: 10px;
     }
 
-    .stats-bottom {
-        flex-direction: row;
-        gap: 30px;
-        margin-top: 30px;
-    }
-
-    .about-card {
-        grid-template-columns: 1fr;
-    }
-
-    .about-image {
-        height: 200px;
-        border-radius: 0 0 90px 0;
-    }
-
-    .about-text {
-        padding: 24px 22px;
+    .stat p {
+        font-size: 12px;
     }
 }
