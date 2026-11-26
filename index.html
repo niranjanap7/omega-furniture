@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omega Furniture</title>
     <link rel="stylesheet" href="style.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@600;700&family=DM+Sans:wght@400;500&family=Italiana&family=Nunito+Sans:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@300;400&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -17,7 +26,7 @@
             <img src="logo.png" alt="logo">
             <div class="nav-links">
                 <a href="#">Home</a>
-                <a href="#">About</a>
+                <a href=#about>About</a>
                 <a href="#">Product</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact Us</a>
@@ -49,46 +58,126 @@
     </section>
 
     <section class="about-us" id="about">
-    <div class="about-container">
+        <div class="about-container">
 
-        <h2 class="about-title">OUR <span>STORY</span></h2>
+            <h2 class="about-title">OUR <span>STORY</span></h2>
 
-        <div class="about-content">
-            <div class="about-text">
-                <p>
-                    At Omega Furniture, we believe a home is more than walls and rooms.
-                    It is a story that grows with the people who live in it.
-                </p>
-                <p>
-                    Based in Kannur, we craft timeless furniture from solid wood and
-                    natural materials, designed for modern living and built to last for
-                    generations. Every piece is shaped with care, so your space feels
-                    warm, personal and truly yours.
-                </p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        At Omega Furniture, we believe a home is more than walls and rooms.
+                        It is a story that grows with the people who live in it.
+                    </p>
+                    <p>
+                        Based in Kannur, we craft timeless furniture from solid wood and
+                        natural materials, designed for modern living and built to last for
+                        generations. Every piece is shaped with care, so your space feels
+                        warm, personal and truly yours.
+                    </p>
+                </div>
+
+                <div class="about-image">
+                    <img src="about.png" alt="Omega Furniture craftsmanship">
+                </div>
             </div>
 
-            <div class="about-image">
-                <img src="about.png" alt="Omega Furniture craftsmanship">
+            <div class="about-stats">
+                <div class="stat">
+                    <h3>15+</h3>
+                    <p>Years of experience</p>
+                </div>
+                <div class="stat">
+                    <h3>170+</h3>
+                    <p>Completed projects</p>
+                </div>
+                <div class="stat">
+                    <h3>100+</h3>
+                    <p>Client reviews</p>
+                </div>
             </div>
         </div>
+    </section>
 
-        <div class="about-stats">
-            <div class="stat">
-                <h3>15+</h3>
-                <p>Years of experience</p>
+    <section class="categories" id="product">
+        <div class="categories__head">
+            <div>
+                <div class="eyebrow">Our Product</div>
+                <h2>Categories</h2>
             </div>
-            <div class="stat">
-                <h3>170+</h3>
-                <p>Completed projects</p>
-            </div>
-            <div class="stat">
-                <h3>100+</h3>
-                <p>Client reviews</p>
-            </div>
+            <p class="categories__desc">
+                Discover our curated range of furniture,<br>
+                designed to bring comfort and elegance to every space.
+            </p>
         </div>
 
-    </div>
-</section>
+        <div class="categories__grid">
+
+            <a href="#" class="cat-card">
+                <img src="living.png" alt="Living Room Furniture">
+                <div class="cat-card__label">
+                    <h3>Living Room<br>Furniture</h3>
+                    <span class="cat-card__arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg>
+                    </span>
+                </div>
+            </a>
+
+            <a href="#" class="cat-card">
+                <img src="bedroom.png" alt="Bedroom Furniture">
+                <div class="cat-card__label">
+                    <h3>Bedroom<br>Furniture</h3>
+                    <span class="cat-card__arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg>
+                    </span>
+                </div>
+            </a>
+
+            <a href="#" class="cat-card">
+                <img src="office.png" alt="Office Furniture">
+                <div class="cat-card__label">
+                    <h3>Office<br>Furniture</h3>
+                    <span class="cat-card__arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg>
+                    </span>
+                </div>
+            </a>
+
+            <a href="#" class="cat-card">
+                <img src="wardrobe.png" alt="Wardrobes and Storage Furniture">
+                <div class="cat-card__label">
+                    <h3>Wardrobes &amp;<br>Storage Furniture</h3>
+                    <span class="cat-card__arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg>
+                    </span>
+                </div>
+            </a>
+
+            <a href="#" class="cat-card">
+                <img src="dining.png" alt="Dining Furniture">
+                <div class="cat-card__label">
+                    <h3>Dining<br>Furniture</h3>
+                    <span class="cat-card__arrow">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14M13 6l6 6-6 6" />
+                        </svg>
+                    </span>
+                </div>
+            </a>
+        </div>
+    </section>
 
 </body>
 
