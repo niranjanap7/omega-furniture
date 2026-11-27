@@ -20,14 +20,14 @@
 
 <body>
 
-    <section class="hero">
+    <section class="hero" id="heroo">
         <!-- Navbar -->
         <nav class="navbar">
             <img src="logo.png" alt="logo">
             <div class="nav-links">
-                <a href="#">Home</a>
+                <a href="#heroo">Home</a>
                 <a href=#about>About</a>
-                <a href="#">Product</a>
+                <a href="#product">Product</a>
                 <a href="#">Blog</a>
                 <a href="#">Contact Us</a>
             </div>
@@ -52,7 +52,7 @@
                 </p>
             </div>
             <div class="hero-buttons">
-                <a href="#" class="btn-primary">EXPLORE</a>
+                <a href="#product" class="btn-primary">EXPLORE</a>
             </div>
         </div>
     </section>
@@ -110,72 +110,126 @@
             </p>
         </div>
 
-        <div class="categories__grid">
+        <div class="categories__slider">
+            <button class="slider-btn prev" aria-label="Previous">‹</button>
 
-            <a href="#" class="cat-card">
-                <img src="living.png" alt="Living Room Furniture">
-                <div class="cat-card__label">
-                    <h3>Living Room<br>Furniture</h3>
-                    <span class="cat-card__arrow">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14M13 6l6 6-6 6" />
-                        </svg>
-                    </span>
-                </div>
-            </a>
+            <div class="categories__grid">
 
-            <a href="#" class="cat-card">
-                <img src="bedroom.png" alt="Bedroom Furniture">
-                <div class="cat-card__label">
-                    <h3>Bedroom<br>Furniture</h3>
-                    <span class="cat-card__arrow">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14M13 6l6 6-6 6" />
-                        </svg>
-                    </span>
-                </div>
-            </a>
+                <article class="cat-card">
+                    <img src="living.png" alt="Living Room Furniture">
+                    <div class="cat-card__label">
+                        <h3>Living Room<br>Furniture</h3>
+                        <a class="buy-btn" target="_blank" rel="noopener"
+                            href="https://wa.me/916238163629?text=Hi%2C%20I%27m%20interested%20in%20Living%20Room%20Furniture">Buy
+                            Now</a>
+                    </div>
+                </article>
 
-            <a href="#" class="cat-card">
-                <img src="office.png" alt="Office Furniture">
-                <div class="cat-card__label">
-                    <h3>Office<br>Furniture</h3>
-                    <span class="cat-card__arrow">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14M13 6l6 6-6 6" />
-                        </svg>
-                    </span>
-                </div>
-            </a>
+                <article class="cat-card">
+                    <img src="bedroom.png" alt="Bedroom Furniture">
+                    <div class="cat-card__label">
+                        <h3>Bedroom<br>Furniture</h3>
+                        <a class="buy-btn" target="_blank" rel="noopener"
+                            href="https://wa.me/916238163629?text=Hi%2C%20I%27m%20interested%20in%20Bedroom%20Furniture">Buy
+                            Now</a>
+                    </div>
+                </article>
 
-            <a href="#" class="cat-card">
-                <img src="wardrobe.png" alt="Wardrobes and Storage Furniture">
-                <div class="cat-card__label">
-                    <h3>Wardrobes &amp;<br>Storage Furniture</h3>
-                    <span class="cat-card__arrow">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14M13 6l6 6-6 6" />
-                        </svg>
-                    </span>
-                </div>
-            </a>
+                <article class="cat-card">
+                    <img src="office.png" alt="Office Furniture">
+                    <div class="cat-card__label">
+                        <h3>Office<br>Furniture</h3>
+                        <a class="buy-btn" target="_blank" rel="noopener"
+                            href="https://wa.me/916238163629?text=Hi%2C%20I%27m%20interested%20in%20Office%20Furniture">Buy
+                            Now</a>
+                    </div>
+                </article>
 
-            <a href="#" class="cat-card">
-                <img src="dining.png" alt="Dining Furniture">
-                <div class="cat-card__label">
-                    <h3>Dining<br>Furniture</h3>
-                    <span class="cat-card__arrow">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M5 12h14M13 6l6 6-6 6" />
-                        </svg>
-                    </span>
-                </div>
-            </a>
+                <article class="cat-card">
+                    <img src="wardrobe.png" alt="Wardrobes and Storage Furniture">
+                    <div class="cat-card__label">
+                        <h3>Wardrobes &amp;<br>Storage Furniture</h3>
+                        <a class="buy-btn" target="_blank" rel="noopener"
+                            href="https://wa.me/916238163629?text=Hi%2C%20I%27m%20interested%20in%20Wardrobes%20and%20Storage">Buy
+                            Now</a>
+                    </div>
+                </article>
+
+                <article class="cat-card">
+                    <img src="dining.png" alt="Dining Furniture">
+                    <div class="cat-card__label">
+                        <h3>Dining<br>Furniture</h3>
+                        <a class="buy-btn" target="_blank" rel="noopener"
+                            href="https://wa.me/916238163629?text=Hi%2C%20I%27m%20interested%20in%20Dining%20Furniture">Buy
+                            Now</a>
+                    </div>
+                </article>
+                <article class="cat-card">
+                    <img src="kitchen.png" alt="Modular Kitchen">
+                    <div class="cat-card__label">
+                        <h3>Modular<br>Kitchen</h3>
+                        <a class="buy-btn" target="_blank" rel="noopener"
+                            href="https://wa.me/916238163629?text=Hi%2C%20I%27m%20interested%20in%20Dining%20Furniture">Buy
+                            Now</a>
+                    </div>
+                </article>
+                <article class="cat-card">
+                    <img src="table top.png" alt="Table Top">
+                    <div class="cat-card__label">
+                        <h3>Table<br>Top</h3>
+                        <a class="buy-btn" target="_blank" rel="noopener"
+                            href="https://wa.me/916238163629?text=Hi%2C%20I%27m%20interested%20in%20Dining%20Furniture">Buy
+                            Now</a>
+                    </div>
+                </article>
+                <article class="cat-card">
+                    <img src="furnishing.png" alt="Furnishing">
+                    <div class="cat-card__label">
+                        <h3>Furnishings</h3>
+                        <a class="buy-btn" target="_blank" rel="noopener"
+                            href="https://wa.me/916238163629?text=Hi%2C%20I%27m%20interested%20in%20Dining%20Furniture">Buy
+                            Now</a>
+                    </div>
+                </article>
+                <article class="cat-card">
+                    <img src="curtain.png" alt="curtains">
+                    <div class="cat-card__label">
+                        <h3>Curtains</h3>
+                        <a class="buy-btn" target="_blank" rel="noopener"
+                            href="https://wa.me/916238163629?text=Hi%2C%20I%27m%20interested%20in%20Dining%20Furniture">Buy
+                            Now</a>
+                    </div>
+                </article>
+                <article class="cat-card">
+                    <img src="mattress.png" alt="mattresses">
+                    <div class="cat-card__label">
+                        <h3>Mattresses</h3>
+                        <a class="buy-btn" target="_blank" rel="noopener"
+                            href="https://wa.me/916238163629?text=Hi%2C%20I%27m%20interested%20in%20Dining%20Furniture">Buy
+                            Now</a>
+                    </div>
+                </article>
+                <article class="cat-card">
+                    <img src="fall ceiling.png" alt="fall ceiling">
+                    <div class="cat-card__label">
+                        <h3>Ceiling</h3>
+                        <a class="buy-btn" target="_blank" rel="noopener"
+                            href="https://wa.me/916238163629?text=Hi%2C%20I%27m%20interested%20in%20Dining%20Furniture">Buy
+                            Now</a>
+                    </div>
+                </article>
+                <article class="cat-card">
+                    <img src="carpet.png" alt="carpet">
+                    <div class="cat-card__label">
+                        <h3>Carpet</h3>
+                        <a class="buy-btn" target="_blank" rel="noopener"
+                            href="https://wa.me/916238163629?text=Hi%2C%20I%27m%20interested%20in%20Dining%20Furniture">Buy
+                            Now</a>
+                    </div>
+                </article>
+            
+            </div>
+            <button class="slider-btn next" aria-label="Next">›</button>
         </div>
     </section>
 
